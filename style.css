@@ -399,6 +399,42 @@ section.alt{
   display: block;
 }
 
+/* ---------------- Supporters grid ---------------- */
+
+.supporter-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.supporter-card{
+  background: var(--card);
+  border: 1px solid var(--sand-line);
+  border-radius: 4px;
+  padding: 26px 20px;
+  text-align: center;
+}
+
+.supporter-card a{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.supporter-card a:hover h3{ text-decoration: underline; }
+
+.supporter-card img{
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin: 0 auto 14px;
+  display: block;
+}
+
+.supporter-card h3{ font-size: 17px; margin-bottom: 4px; }
+.supporter-card p{ color: var(--ink-soft); font-size: 14px; margin-bottom: 0; }
+
 /* ---------------- Photo placeholders ---------------- */
 
 .photo-slot{
