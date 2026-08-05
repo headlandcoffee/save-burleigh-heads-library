@@ -515,6 +515,49 @@ figure.photo figcaption{
 .news-item a{ font-weight: 600; text-decoration: none; }
 .news-item a:hover{ text-decoration: underline; }
 
+.news-item .source-tag{
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--teal-dark);
+  background: var(--sand);
+  border: 1px solid var(--sand-line);
+  border-radius: 3px;
+  padding: 2px 8px;
+  margin-bottom: 6px;
+}
+
+.video-embed{
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 480px;
+  margin-top: 12px;
+  border: 1px solid var(--sand-line);
+  border-radius: 4px;
+  background: #000;
+}
+.video-embed iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.clipping-thumb{
+  max-width: 260px;
+  width: 100%;
+  border: 1px solid var(--sand-line);
+  border-radius: 4px;
+  margin-top: 12px;
+  display: block;
+}
+
 /* ---------------- Footer ---------------- */
 
 footer{
